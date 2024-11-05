@@ -252,3 +252,89 @@ This project is licensed under the MIT License. See the LICENSE file for more de
 ![Screenshot 2024-11-05 095013](https://github.com/user-attachments/assets/14c08a39-25c8-42cd-afb0-d1339713791f)
 
 --------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Custom Data Pipeline for ETL Processes
+
+This project implements a custom ETL (Extract, Transform, Load) pipeline in Python. The pipeline extracts data from a CSV file, transforms it for analysis, and loads it into an SQLite database for further use.
+Table of Contents
+
+    Project Overview
+    Features
+    Requirements
+    Setup
+    Project Structure
+    Usage
+    Results
+    Future Improvements
+    License
+
+Project Overview
+
+The custom ETL pipeline consists of three main stages:
+
+    Extract: Load raw data from a CSV file.
+    Transform: Clean and prepare the data for analysis.
+    Load: Store the transformed data in an SQLite database.
+
+This project can serve as a foundation for more complex ETL processes, suitable for data analysis, reporting, and machine learning tasks.
+Features
+
+    Data Extraction: Reads data from a specified CSV file.
+    Data Transformation: Cleans data by removing duplicates and filling missing values.
+    Data Loading: Loads cleaned data into an SQLite database.
+    Logging: Tracks the ETL process for easier debugging and monitoring.
+
+Requirements
+
+    Python 3.x
+    pandas - For data manipulation
+    sqlite3 - For database interactions
+
+To install the required packages, run:
+
+bash
+
+pip install pandas
+
+Setup
+
+    Clone the repository:
+
+    bash
+
+git clone https://github.com/your-username/custom-etl-pipeline.git
+cd custom-etl-pipeline
+
+Prepare your data by placing a CSV file named data.csv in the project directory.
+
+Run the ETL pipeline:
+
+bash
+
+    python custom_etl_pipeline.py
+
+Project Structure
+
+plaintext
+
+.
+├── custom_etl_pipeline.py   # Main script for the ETL process
+├── data.csv                 # Sample raw data file
+└── README.md                # Project documentation
+
+Usage
+
+The ETL pipeline can be executed directly, and it will process the specified CSV file, perform transformations, and save the results in an SQLite database.
+Results
+
+After running the script, you’ll find an SQLite database named etl_database.db, which contains a table transformed_data with the cleaned data ready for analysis.
+Future Improvements
+
+    More Transformation Functions: Add additional transformation capabilities (e.g., data type conversion, aggregations).
+    Integration with Other Databases: Expand support for other databases like PostgreSQL, MySQL, etc.
+    Scheduling: Implement scheduling to run the ETL process automatically at specified intervals.
+    Data Validation: Add validation checks to ensure data integrity and quality.
+
+License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
