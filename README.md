@@ -107,3 +107,7 @@ Potential Improvements
 License
 
 This project is licensed under the MIT License.
+
+![Screenshot 2024-11-05 090520](https://github.com/user-attachments/assets/5e961960-9b6b-4abb-bc57-1939f833a253)
+
+![Screenshot 2024-11-05 090537](https://github.com/user-attachments/assets/af07f8fb-92f1-44c0-b536-6f1814ec4a0f)
