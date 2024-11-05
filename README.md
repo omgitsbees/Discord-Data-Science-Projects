@@ -121,7 +121,7 @@ Using SQL, write queries to calculate baseline metrics and any necessary aggrega
     GROUP BY group_id;
 
 Post-Exposure Data for Analysis:
-    sql
+    
     SELECT group_id, AVG(time_spent) AS avg_time_spent, AVG(session_count) AS avg_session_count, AVG(feature_interactions) AS avg_feature_interactions
     FROM user_data
     WHERE post_exposure = TRUE
