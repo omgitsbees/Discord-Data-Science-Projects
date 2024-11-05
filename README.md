@@ -108,6 +108,28 @@ License
 
 This project is licensed under the MIT License.
 
+Step 2: Data Collection and SQL Queries
+
+Using SQL, write queries to calculate baseline metrics and any necessary aggregations for analysis. Here are some example queries:
+
+    Calculate Baseline Metrics for Both Groups:
+
+    sql
+
+SELECT group_id, AVG(time_spent) AS avg_time_spent, AVG(session_count) AS avg_session_count
+FROM user_data
+WHERE pre_exposure = TRUE
+GROUP BY group_id;
+
+Post-Exposure Data for Analysis:
+
+sql
+
+SELECT group_id, AVG(time_spent) AS avg_time_spent, AVG(session_count) AS avg_session_count, AVG(feature_interactions) AS avg_feature_interactions
+FROM user_data
+WHERE post_exposure = TRUE
+GROUP BY group_id;
+
 ![Screenshot 2024-11-05 090520](https://github.com/user-attachments/assets/5e961960-9b6b-4abb-bc57-1939f833a253)
 
 ![Screenshot 2024-11-05 090537](https://github.com/user-attachments/assets/af07f8fb-92f1-44c0-b536-6f1814ec4a0f)
