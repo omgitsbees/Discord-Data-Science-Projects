@@ -1,0 +1,7 @@
+kafka-python
+pyspark
+psycopg2-binary
+plotly
+pandas
+uvicorn
+fastapi

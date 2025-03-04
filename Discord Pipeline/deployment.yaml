@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: discord-pipeline
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: discord-pipeline
+  template:
+    metadata:
+      labels:
+        app: discord-pipeline
+    spec:
+      containers:
+      - name: discord-pipeline
+        image: discord-pipeline:latest
+        ports:
+        - containerPort: 80
